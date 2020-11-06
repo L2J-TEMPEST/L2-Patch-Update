@@ -1,0 +1,13 @@
+
+<list>
+	<archive filename="L2-TEMPEST.exe" checksum="96628221" original="D3E831D1" size="1821184"/>
+	<archive filename="Maps\22_22.unr" checksum="3F336CC7" original="398A02EF" size="10434593"/>
+	<archive filename="StaticMeshes\Giran_V_SX.usx" checksum="8D702E64" original="F72D9721" size="24382579"/>
+	<archive filename="StaticMeshes\Giran_Village_S.usx" checksum="D599524D" original="8D8DA6F1" size="15813013"/>
+	<archive filename="system-tempest\L2.exe" checksum="1D07AB67" original="19EFAF26" size="3433852"/>
+	<archive filename="system-tempest\l2.ini" checksum="C974082A" original="4B1DA1CC" size="4272"/>
+	<archive filename="system-tempest\l2.int" checksum="BD42C512" original="5E63D9D5" size="143"/>
+	<archive filename="system-tempest\ServerName-eu.dat" checksum="0CD7967B" original="74E43CC3" size="1456"/>
+	<archive filename="Textures\Giran_V_TX.utx" checksum="FCC8E81B" original="FC84A3EB" size="5172287"/>
+	<archive filename="Textures\Giran_Village_T.utx" checksum="66D5A17F" original="B6C4A4B6" size="5919762"/>
+</list>
