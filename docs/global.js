@@ -16,7 +16,7 @@ function showFlashObject(objID, objSource, objWidth, objHeight, objQuality, objW
 	if (objWmode == "") {
 		objWmode = 'transparent';
 	} else {
-		objWmode = 'transparent';
+		objWmode = '';
 	}
 	/* Flash 8.0 version */
 	document.write('<OBJECT id="' + objID + '" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000"');
