@@ -61,12 +61,26 @@ a:hover {
 
 .cmarea {
     position: absolute;
-    top: 250px;
-    left: 129px;
+    top: 7px;
+    left: 126px;
+}
+.border_slide {
+    top: 8px;
+}
+.border_slide img {
+    width: 345px;
+    height: 165px;
+}
+
+.slide_show img{
+    position: absolute;
+    left: 5px;
+    top: 4px;
 }
 
 .eventBanner {
     position: absolute;
     top: 7px;
     left: 126px;
+    display: none;
 }
