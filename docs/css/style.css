@@ -1,5 +1,7 @@
 body {
     margin: 0px;
+    width: 480px;
+    height: 200px;
 }
 
 img {
@@ -17,6 +19,13 @@ a:hover {
     color: #020201;
     text-decoration: none;
     color: #FFFFFF;
+}
+
+.bg{
+    background-image: url("../img/webBG.jpg");
+    background-repeat: no-repeat;
+    width:480px; 
+    height:200px;;
 }
 
 .tm {
