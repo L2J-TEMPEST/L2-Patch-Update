@@ -85,9 +85,6 @@ a:hover {
     top: 4px;
 }
 
-.eventBanner {
-    position: absolute;
-    top: 7px;
-    left: 126px;
-    display: none;
+.slide_number {
+    padding: 0;
 }

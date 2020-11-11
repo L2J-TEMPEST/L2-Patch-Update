@@ -119,11 +119,11 @@
                 <img src="img/new_border.png">
             </div>
             <div class="slide_show">
-                <a href="www.google.com" id="chgEvent" target="_blank"><img src="img/blank.gif" name="SlideShow"
+                <a href="https://www.google.com" id="chgEvent" target="_blank"><img src="img/blank.gif" name="SlideShow"
                         onclick="GetClickCountRate('eventCount.xml');"></a>
             </div>
 
-            <div style="padding: 1px 7px 0 0;">
+            <div class="slide_number">
                 <script language="javascript">
                     // =======================================
                     // do not edit anything below this line
@@ -205,110 +205,6 @@
         </div>
 
         <!-- end :: CM AREA -->
-
-        <div class="eventBanner">
-            <table cellspacing="0" cellpadding="0" width="343">
-                <colgroup>
-                    <col width="5" />
-                    <col width="333" />
-                    <col width="5" />
-                </colgroup>
-
-                <tr>
-                    <td colspan="3"><img src="img/bannerbox_top.jpg" width="343" height="4"></td>
-                </tr>
-
-                <tr>
-                    <td><img src="img/bannerbox_left.jpg" width="5" height="156"></td>
-                    <td><a href="#" id="chgEvent" target="_blank"><img src="img/blank.gif" name="SlideShow" width="333"
-                                height="156" border="0" onclick="GetClickCountRate('eventCount.xml');"></a></td>
-                    <td><img src="img/bannerbox_right.jpg" width="5" height="156"></td>
-                </tr>
-                <tr>
-                    <td colspan="3"><img src="img/bannerbox_bottom.jpg" width="343" height="4"></td>
-                </tr>
-            </table>
-
-            <div style="padding: 1px 7px 0 0;">
-                <script language="javascript">
-                    // =======================================
-                    // do not edit anything below this line
-                    // =======================================
-                    var t
-                    var j = 0
-                    var p, pEventCount = 0;
-
-                    for (var i = 0; i < g_MainEvent_image.length; i++) {
-                        if (g_MainEvent_image[i] != "") {
-                            pEventCount = pEventCount + 1;
-                        }
-                    }
-                    p = pEventCount;
-
-                    var preLoad = new Array()
-                    for (i = 0; i < p; i++) {
-                        preLoad[i] = new Image()
-                        preLoad[i].src = g_MainEvent_image[i]
-                    }
-
-                    function runSlideShow() {
-                        if (document.documentElement) {
-                            document.all['chgEvent'].href = g_MainEvent_url[j];
-                        }
-                        document.images.SlideShow.src = preLoad[j].src
-
-                        j = j + 1
-                        if (j > (p - 1)) j = 0
-                        t = setTimeout('runSlideShow()', slideShowSpeed)
-                    }
-
-                    function windowOpen(url, size) {
-                        var winPop = window.open(url, "", size);
-                        if (winPop == "[object]") winPop.focus();
-                    }
-
-                    function changeEvent(idx) {
-                        //document.all['eventBanner'].style.backgroundImage = "url("+g_MainEvent_image[idx]+")";
-                        document.SlideShow.src = g_MainEvent_image[idx];
-                        //document.all['chgEventLink' + idx].href = g_MainEvent_url[idx];
-                        document.all['chgEvent'].href = g_MainEvent_url[idx];
-                        clearTimeout(t);
-                    }
-
-                    try {
-                        var g_main_event_size_str = "";
-                        for (var i = 0; i < g_MainEvent_title.length; i++) {
-                            if (i < p) {
-                                document.write("");
-                                if (g_MainEvent_flag[i] == 'true') {
-                                    document.write("<a target=_blank href=\"javascript:windowOpen('" +
-                                        g_MainEvent_url[
-                                            i] + "','" +
-                                        g_MainEvent_size[i] + "')\" name='chgEventLink" + i +
-                                        "' onmouseover=\"changeEvent(" + i +
-                                        ");\" onmouseout=\"runSlideShow();\">");
-                                } else {
-                                    document.write("<a target=_blank href='" + g_MainEvent_url[i] +
-                                        "' name='chgEventLink" + i +
-                                        "' onmouseover=\"changeEvent(" + i +
-                                        ");\" onmouseout=\"runSlideShow();\">");
-                                }
-                                document.write("<img src='img/no" + (i + 1) +
-                                    "on.jpg' width='23' height='19' border='0' alt='" +
-                                    g_MainEvent_title[i] + "' hspace='2'></a>");
-                            } else {
-                                document.write("");
-                            }
-                        }
-                    } catch (e) {
-                        document.write("");
-                    }
-                    changeEvent(g_MainEvent_defaultImage - 1);
-                </script>
-                <!-- end :: banner slide show AREA -->
-
-            </div>
-        </div>
     </div>
 </body>
 
